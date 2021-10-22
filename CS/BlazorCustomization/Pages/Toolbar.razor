@@ -21,13 +21,17 @@
     XtraReport Report = new TableReport();
     private ElementReference viewerComponent;
 
-    void OnCustomizeToolbar(ToolbarModel toolbarModel) {
-        toolbarModel.AllItems.Add(new ToolbarItem() {
-            IconCssClass = "fullscreen-enter",
+    void OnCustomizeToolbar(ToolbarModel toolbarModel)
+    {
+        toolbarModel.AllItems.Add(new ToolbarItem()
+        {
+            // Use Open Iconic's icon.
+            IconCssClass = "oi oi-command",
             Text = "Full Screen",
             AdaptiveText = "Full Screen",
             AdaptivePriority = 1,
-            Click = async (args) => {
+            Click = async (args) =>
+            {
                 await JsRuntime.InvokeVoidAsync("customApi.requestFullscreen", viewerComponent);
             }
         });

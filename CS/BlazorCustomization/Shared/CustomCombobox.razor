@@ -7,12 +7,16 @@
     [Parameter] public OrdersModel Model { get; set; }
     [Parameter] public ParameterModel ParameterModel { get; set; }
 
-    void OrdersTextChanged(string val) {
-        try {
+    void OrdersTextChanged(string val)
+    {
+        try
+        {
             int id = Int32.Parse(val);
             Model.OrderId = id;
             ParameterModel.Value = id;
-        } catch(FormatException) {
+        }
+        catch (FormatException)
+        {
         }
     }
 }

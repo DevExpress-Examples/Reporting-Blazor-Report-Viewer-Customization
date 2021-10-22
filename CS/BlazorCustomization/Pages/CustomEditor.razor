@@ -22,29 +22,34 @@
     OrdersModel OrdersModel = new OrdersModel();
     ParameterModel ParameterModel { get; set; }
 
-    void UnsubscribeParameters() {
+    void UnsubscribeParameters()
+    {
         ParameterModel.ValueChanged -= OnParameterValueChanged;
     }
 
-    void SubscribeParameters() {
+    void SubscribeParameters()
+    {
         ParameterModel.ValueChanged += OnParameterValueChanged;
     }
 
-    private void OnParameterValueChanged(object sender, EventArgs e) {
+    private void OnParameterValueChanged(object sender, EventArgs e)
+    {
         var changedModel = sender as ParameterModel;
         OrdersModel.OrderId = (int)changedModel.Value;
     }
 
-    void OnCustomizeParameters(ParametersModel parameters) {
+    void OnCustomizeParameters(ParametersModel parameters)
+    {
         var parameter = parameters.VisibleItems
             .Where(param => param.Name == "OrderIdParameter").FirstOrDefault();
-        parameter.ValueTemplate = @<CustomCombobox Model=OrdersModel ParameterModel=ParameterModel />;
+        parameter.ValueTemplate =@<CustomCombobox Model=OrdersModel ParameterModel=ParameterModel />;
         ParameterModel = parameter;
         SubscribeParameters();
     }
 
-    public void Dispose() {
-        if(ParameterModel != null)
-            UnsubscribeParameters();
+    public void Dispose()
+    {
+        if (ParameterModel != null)
+        UnsubscribeParameters();
     }
 }

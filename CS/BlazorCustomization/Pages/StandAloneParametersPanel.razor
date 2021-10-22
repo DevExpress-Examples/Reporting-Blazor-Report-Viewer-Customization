@@ -17,8 +17,8 @@
                 <CustomCombobox Model=OrdersModel ParameterModel=ParameterModel />
             </DxFormLayoutItem>
             <DxFormLayoutItem ColSpanMd="1">
-                <DxButton SubmitFormOnClick="true" 
-                          Text="Submit" 
+                <DxButton SubmitFormOnClick="true"
+                          Text="Submit"
                           Title="Press the key to reload the report with the parameters."
                           RenderStyle="ButtonRenderStyle.Secondary" />
             </DxFormLayoutItem>
@@ -42,8 +42,10 @@
     OrdersModel OrdersModel = new OrdersModel();
     ParameterModel ParameterModel { get; set; }
 
-    protected override void OnAfterRender(bool firstRender) {
-        if(firstRender) {
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
             var parameterTab = reportViewer.TabPanelModel.Tabs
                 .Where(Tab => Tab.ContentModel is ParametersModel)
                 .FirstOrDefault();
@@ -53,15 +55,18 @@
         base.OnAfterRender(firstRender);
     }
 
-    void HandleValidSubmit() {
-        if(!OrdersModel.OrdersData.Contains(OrdersModel.OrderId)) {
+    void HandleValidSubmit()
+    {
+        if (!OrdersModel.OrdersData.Contains(OrdersModel.OrderId))
+        {
             OrdersModel.OrdersData.Add(OrdersModel.OrderId);
             OrdersModel.OrdersData.Sort();
         }
         reportViewer.ParametersModel.OnSubmitParameters();
     }
 
-    void OnCustomizeParameters(ParametersModel parameters) {
+    void OnCustomizeParameters(ParametersModel parameters)
+    {
         ParameterModel = parameters.VisibleItems
             .Where(param => param.Name == "OrderIdParameter")
             .FirstOrDefault();

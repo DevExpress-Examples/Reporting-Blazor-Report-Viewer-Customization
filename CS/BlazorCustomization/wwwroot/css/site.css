@@ -1,32 +1,12 @@
+@import url('open.iconic/font/css/open-iconic-bootstrap.min.css');
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-a, .btn-link {
-    color: #0366d6;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.main {
-    position: relative;
-}
-
-.content {
-    position: absolute;
-    bottom: 0;
-    top: 3.5rem;
-    right: 0;
-    left: 0;
-}
-
-.parameters-panel-custom {
-    height: 2rem;
-    margin: 1rem;
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -58,8 +38,4 @@ a, .btn-link {
     position: absolute;
     right: 0.75rem;
     top: 0.5rem;
-}
-
-.fullscreen-enter {
-    background: url('data:image/svg+xml;base64,PHN2ZyBkYXRhLWJpbmQ9InN2Z0F0dHJzIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0xIDEwaDNWNGg2VjFIMXpNNCAxNEgxdjloOXYtM0g0ek0xNCAxdjNoNnY2aDNWMXpNMjAgMjBoLTZ2M2g5di05aC0zeiIgZmlsbD0iI0ZGRiI+PC9wYXRoPjwvc3ZnPg==')
 }
