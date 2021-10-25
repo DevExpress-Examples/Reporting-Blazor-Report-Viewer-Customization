@@ -1,4 +1,3 @@
-using BlazorCustomization.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +20,6 @@ namespace BlazorCustomization {
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
             services.AddDevExpressServerSideBlazorReportViewer();
         }
 
