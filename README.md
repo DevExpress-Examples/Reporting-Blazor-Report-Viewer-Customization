@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/389624564/2022.2)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1020314)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Report Viewer for Blazor - Customization API
 
 This project demonstrates how to use API to customize the Report Viewer 'native' server-side Blazor component.
@@ -11,7 +6,7 @@ This project demonstrates how to use API to customize the Report Viewer 'native'
 The Report Viewer API entry point is the [DxReportViewer](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxReportViewer) class. You can specify its properties and handle its events to adjust the Report Viewer appearance and behavior. 
 
 ## Example: UI Customization
-Related pages: [Toolbar.razor](./CS/BlazorCustomization/Pages/Toolbar.razor), [StandAloneParametersPanel.razor](./CS/BlazorCustomization/Pages/StandAloneParametersPanel.razor).
+Related pages: [Toolbar.razor](BlazorCustomization/Pages/Toolbar.razor), [StandAloneParametersPanel.razor](BlazorCustomization/Pages/StandAloneParametersPanel.razor).
 
 The sample code sets the component's initial size and zoom level, adds a custom button to the toolbar, hides the Properties Panel.
 
@@ -39,7 +34,7 @@ The following event is handled:
 
 
 ## Example: Stand-Alone Parameter Editor
-Related page: [StandAloneParametersPanel.razor](./CS/BlazorCustomization/Pages/StandAloneParametersPanel.razor).
+Related page: [StandAloneParametersPanel.razor](BlazorCustomization/Pages/StandAloneParametersPanel.razor).
 
 The sample code creates a custom component that is composed of a combo box and a button. The component allows the user to specify the report parameter value.
 
@@ -63,7 +58,7 @@ The following events are handled:
 | [OnCustomizeParameters](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxReportViewer.OnCustomizeParameters) |	Gets the Parameter model and stores it in a variable. |
 
 ## Example: Custom Parameter Editor
-Related page: [CustomEditor.razor](./CS/BlazorCustomization/Pages/CustomEditor.razor).
+Related page: [CustomEditor.razor](BlazorCustomization/Pages/CustomEditor.razor).
 
 The sample code specifies a custom template for the parameter editor in the Parameters panel.
 

@@ -7,13 +7,10 @@
 
 @inject IJSRuntime JsRuntime
 
-<div @ref="viewerComponent" style="width: 100%; height: 100%;">
+<div @ref="viewerComponent" style="width: 100%; height: 1000px;">
     <DxReportViewer @ref="reportViewer"
                     OnCustomizeToolbar="OnCustomizeToolbar"
-                    SizeMode="@DevExpress.Blazor.SizeMode.Medium"
-                    Zoom="1.25"
-                    Report="Report"
-                    RootCssClasses="w-100 h-100" />
+                    Report="Report" />
 </div>
 
 @code {

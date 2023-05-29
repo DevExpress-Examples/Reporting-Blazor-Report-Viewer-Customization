@@ -42,8 +42,6 @@ namespace BlazorCustomization {
 
             app.UseRouting();
 
-            app.UseDevExpressServerSideBlazorReportViewer();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapBlazorHub();

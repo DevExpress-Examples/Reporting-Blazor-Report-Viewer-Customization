@@ -5,10 +5,9 @@
 @using BlazorCustomization.PredefinedReports
 @using DevExpress.Blazor.Reporting.Models
 
-<div @ref="viewerComponent" style="width: 100%; height: 100%;">
+<div @ref="viewerComponent" style="width: 100%; height: 1000px;">
     <DxReportViewer @ref="reportViewer"
-                    Report="Report"
-                    RootCssClasses="w-100 h-100" />
+                    Report="Report" />
 </div>
 
 @code {
