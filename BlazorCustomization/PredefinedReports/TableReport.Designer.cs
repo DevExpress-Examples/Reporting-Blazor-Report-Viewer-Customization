@@ -128,7 +128,7 @@ namespace BlazorCustomization.PredefinedReports
             this.xrPageInfo1,
             this.xrTable1});
             this.PageHeader.Dpi = 96F;
-            this.PageHeader.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.PageHeader.Font = new DevExpress.Drawing.DXFont("Tahoma", 9.75F, DevExpress.Drawing.DXFontStyle.Bold);
             this.PageHeader.HeightF = 115.4961F;
             this.PageHeader.Name = "PageHeader";
             this.PageHeader.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F);
@@ -152,7 +152,7 @@ namespace BlazorCustomization.PredefinedReports
             // 
             this.table3.Dpi = 96F;
             this.table3.EvenStyleName = "EvenStyle";
-            this.table3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.table3.Font = new DevExpress.Drawing.DXFont("Segoe UI", 9F);
             this.table3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.table3.Name = "table3";
             this.table3.OddStyleName = "OddStyle";
@@ -191,7 +191,7 @@ namespace BlazorCustomization.PredefinedReports
             this.tableCell5.Dpi = 96F;
             this.tableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ProductName]")});
-            this.tableCell5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.tableCell5.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.tableCell5.Name = "tableCell5";
             this.tableCell5.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 5, 0, 2, 96F);
             this.tableCell5.StylePriority.UseFont = false;
@@ -205,7 +205,7 @@ namespace BlazorCustomization.PredefinedReports
             this.tableCell6.Dpi = 96F;
             this.tableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitPrice]")});
-            this.tableCell6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tableCell6.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
             this.tableCell6.Name = "tableCell6";
             this.tableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 15, 15, 0, 96F);
             this.tableCell6.RowSpan = 2;
@@ -221,7 +221,7 @@ namespace BlazorCustomization.PredefinedReports
             this.tableCell7.Dpi = 96F;
             this.tableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Quantity]")});
-            this.tableCell7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tableCell7.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
             this.tableCell7.Name = "tableCell7";
             this.tableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 15, 15, 0, 96F);
             this.tableCell7.RowSpan = 2;
@@ -237,7 +237,7 @@ namespace BlazorCustomization.PredefinedReports
             this.tableCell8.Dpi = 96F;
             this.tableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Discount]")});
-            this.tableCell8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tableCell8.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
             this.tableCell8.Name = "tableCell8";
             this.tableCell8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 15, 15, 0, 96F);
             this.tableCell8.RowSpan = 2;
@@ -254,7 +254,7 @@ namespace BlazorCustomization.PredefinedReports
             this.tableCell9.Dpi = 96F;
             this.tableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SubTotal]")});
-            this.tableCell9.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tableCell9.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
             this.tableCell9.Name = "tableCell9";
             this.tableCell9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 15, 15, 0, 96F);
             this.tableCell9.RowSpan = 2;
@@ -272,7 +272,7 @@ namespace BlazorCustomization.PredefinedReports
             this.tableCell10.Dpi = 96F;
             this.tableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Supplier]")});
-            this.tableCell10.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tableCell10.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
             this.tableCell10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tableCell10.Name = "tableCell10";
             this.tableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 5, 0, 10, 96F);
@@ -355,7 +355,7 @@ namespace BlazorCustomization.PredefinedReports
             this.tableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.tableCell4});
             this.tableRow2.Dpi = 96F;
-            this.tableRow2.Font = new System.Drawing.Font("Times New Roman", 18F);
+            this.tableRow2.Font = new DevExpress.Drawing.DXFont("Times New Roman", 18F);
             this.tableRow2.Name = "tableRow2";
             this.tableRow2.StylePriority.UseFont = false;
             this.tableRow2.Weight = 1.5986393230031761D;
@@ -363,7 +363,7 @@ namespace BlazorCustomization.PredefinedReports
             // tableCell15
             // 
             this.tableCell15.Dpi = 96F;
-            this.tableCell15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.tableCell15.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.tableCell15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tableCell15.Name = "tableCell15";
             this.tableCell15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 96F);
@@ -381,7 +381,7 @@ namespace BlazorCustomization.PredefinedReports
             this.tableCell4.Dpi = 96F;
             this.tableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "FormatString(\'{0:$0.00 }\', sumSum([SubTotal]))")});
-            this.tableCell4.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.tableCell4.Font = new DevExpress.Drawing.DXFont("Segoe UI", 16F);
             this.tableCell4.Name = "tableCell4";
             this.tableCell4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 96F);
             this.tableCell4.StylePriority.UseBorders = false;
@@ -397,7 +397,7 @@ namespace BlazorCustomization.PredefinedReports
             // pageInfo1
             // 
             this.pageInfo1.Dpi = 96F;
-            this.pageInfo1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.pageInfo1.Font = new DevExpress.Drawing.DXFont("Segoe UI", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.pageInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(576F, 62.26726F);
             this.pageInfo1.Name = "pageInfo1";
@@ -416,7 +416,7 @@ namespace BlazorCustomization.PredefinedReports
             this.lbOrderID.Dpi = 96F;
             this.lbOrderID.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[OrderID]")});
-            this.lbOrderID.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.lbOrderID.Font = new DevExpress.Drawing.DXFont("Segoe UI", 18F);
             this.lbOrderID.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.lbOrderID.Name = "lbOrderID";
             this.lbOrderID.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F);
@@ -432,7 +432,7 @@ namespace BlazorCustomization.PredefinedReports
             // xrPageInfo1
             // 
             this.xrPageInfo1.Dpi = 96F;
-            this.xrPageInfo1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.xrPageInfo1.Font = new DevExpress.Drawing.DXFont("Segoe UI", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrPageInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 31.68001F);
             this.xrPageInfo1.Name = "xrPageInfo1";
@@ -454,7 +454,7 @@ namespace BlazorCustomization.PredefinedReports
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.BorderWidth = 2F;
             this.xrTable1.Dpi = 96F;
-            this.xrTable1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
+            this.xrTable1.Font = new DevExpress.Drawing.DXFont("Segoe UI", 7F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 85.49609F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(20, 0, 0, 0, 96F);
@@ -475,7 +475,7 @@ namespace BlazorCustomization.PredefinedReports
             this.xrTableCell13,
             this.xrTableCell3});
             this.xrTableRow1.Dpi = 96F;
-            this.xrTableRow1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.xrTableRow1.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F);
             this.xrTableRow1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -613,7 +613,7 @@ namespace BlazorCustomization.PredefinedReports
             this.EvenStyle.BorderColor = System.Drawing.Color.Transparent;
             this.EvenStyle.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.EvenStyle.BorderWidth = 1F;
-            this.EvenStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.EvenStyle.Font = new DevExpress.Drawing.DXFont("Segoe UI", 12F);
             this.EvenStyle.ForeColor = System.Drawing.Color.Black;
             this.EvenStyle.Name = "EvenStyle";
             this.EvenStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 100F);
@@ -624,7 +624,7 @@ namespace BlazorCustomization.PredefinedReports
             this.OddStyle.BorderColor = System.Drawing.Color.Transparent;
             this.OddStyle.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.OddStyle.BorderWidth = 1F;
-            this.OddStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.OddStyle.Font = new DevExpress.Drawing.DXFont("Segoe UI", 12F);
             this.OddStyle.ForeColor = System.Drawing.Color.Black;
             this.OddStyle.Name = "OddStyle";
             this.OddStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 100F);
@@ -635,7 +635,7 @@ namespace BlazorCustomization.PredefinedReports
             this.HeaderStyle.BorderColor = System.Drawing.Color.Gray;
             this.HeaderStyle.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.HeaderStyle.BorderWidth = 1F;
-            this.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.HeaderStyle.Font = new DevExpress.Drawing.DXFont("Segoe UI", 8F, DevExpress.Drawing.DXFontStyle.Bold);
             this.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.HeaderStyle.Name = "HeaderStyle";
             this.HeaderStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 5, 0, 0, 100F);
@@ -664,7 +664,7 @@ namespace BlazorCustomization.PredefinedReports
             this.Extensions.Add("DataSerializationExtension", "Customer Order");
             this.Extensions.Add("DataEditorExtension", "Customer Order");
             this.Extensions.Add("ParameterEditorExtension", "Customer Order");
-            this.Margins = new System.Drawing.Printing.Margins(72, 72, 72, 72);
+            this.Margins = new DevExpress.Drawing.DXMargins(72, 72, 72, 72);
             this.PageHeight = 1056;
             this.PageWidth = 816;
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
