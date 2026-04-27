@@ -8,6 +8,23 @@ html, body {
     height: 100%;
     overflow: hidden;
 }
+body:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+body:fullscreen::backdrop {
+    background-color: #fff;
+}
+
+body:fullscreen .page,
+body:fullscreen .page-layout,
+body:fullscreen .content {
+    background-color: #fff;
+}
 
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
@@ -38,4 +55,8 @@ html, body {
     position: absolute;
     right: 0.75rem;
     top: 0.5rem;
+}
+
+.myViewer{
+    height: 100%!important;
 }
