@@ -35,8 +35,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
-    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Drawing.Skia" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Blazor.Reporting.Viewer" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="26.1.*-*" />
+    <PackageReference Include="DevExpress.Drawing.Skia" Version="26.1.*-*" />
+    <PackageReference Include="DevExpress.Blazor.Reporting.Viewer" Version="26.1.*-*" />
   </ItemGroup>
 </Project>
