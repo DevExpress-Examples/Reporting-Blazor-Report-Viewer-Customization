@@ -4,6 +4,7 @@
 @using DevExpress.XtraReports.UI
 @using BlazorCustomization.PredefinedReports
 @using DevExpress.Blazor.Reporting.Models
+@using DevExpress.Images.Blazor
 
 @inject IJSRuntime JsRuntime
 
@@ -23,8 +24,8 @@
     {
         toolbarModel.AllItems.Add(new ToolbarItem()
         {
-            // Use Open Iconic's icon.
-            IconCssClass = "oi oi-command",
+            // Use an icon from the DevExpress Icon Library (the DevExpress.Images.Blazor NuGet package).
+            IconUrl = Icons.FullScreenMaximize,
             Text = "Full Screen",
             AdaptiveText = "Full Screen",
             AdaptivePriority = 1,
